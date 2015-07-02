@@ -23,16 +23,30 @@ function randomPlay() {
 
 function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
+    var move = ();
+        // If a `move` has a value, your expression should evaluate to that value.
+        if (move != null) {
+            move = move;
+        }
+        // However, if `move` is not specified / is null, your expression should equal `getInput()`.
+        else (move === null) {
+            move = 'getInput()';
+         }
+    return move
 }
 
 function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
+    var move = ():
     // If a `move` has a value, your expression should evaluate to that value.
+    if (move != null) {
+        move = move
+    }
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
+    else (move != null) {
+        move = 'randomPlay()';
+    }
+    return move;
 }
 
 function getWinner(playerMove,computerMove) {
@@ -41,6 +55,12 @@ function getWinner(playerMove,computerMove) {
     // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     /* YOUR CODE HERE */
+    if () {
+        
+    }
+
+
+
     return winner;
 }
 
