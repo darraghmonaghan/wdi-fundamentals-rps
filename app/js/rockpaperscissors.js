@@ -30,25 +30,19 @@ function getWinner(playerMove,computerMove) {
     var playerMove = getPlayerMove();
     var computerMove = getComputerMove();
     if (playerMove === 'rock' && computerMove === 'scissors') {
-        winner = 'player';
+        return (winner = 'player');
     } else if (playerMove === 'paper' && computerMove === 'rock') {
-        winner = 'player';
-        console.log(computerMove);
+        return (winner = 'player');
     } else if (playerMove === 'scissors' && computerMove === 'paper') {
-        winner = 'player';
-        console.log(computerMove);
+        return (winner = 'player');
     } else if (playerMove === 'rock' && computerMove === 'paper') {
-        winner = 'computer';
-        console.log(computerMove);
+        return (winner = 'computer');
     } else if (playerMove === 'paper' && computerMove === 'scissors') {
-        winner = 'computer';
-        console.log(computerMove);
+        return (winner = 'computer');
     } else if (playerMove === 'scissors' && computerMove === 'rock') {
-        winner = 'computer';
-        console.log(computerMove);
+        return (winner = 'computer');
     } else {
-        winner = 'tie';
-        console.log(computerMove);
+        return (winner = 'tie');
     }
     return winner;
 }
@@ -58,12 +52,11 @@ function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
     var playerWins = 0;
     var computerWins = 0;
-    var winner = getWinner();
     var playerMove = getPlayerMove();
     var computerMove = getComputerMove();
+    var winner = getWinner(playerMove, computerMove);
     var gamesPlayed = 0; // number of gamesPlayed so far.
-    while (playerWins < 5 && (computerWins < 5) {
-        getWinner(); {
+    while ((playerWins < 5) && (computerWins < 5)) {
             if (winner === 'player') {
                     playerWins += 1;
                     gamesPlayed += 1;
@@ -77,8 +70,6 @@ function playToFive() {
         }
     }
 }
-
-
 
 
 
